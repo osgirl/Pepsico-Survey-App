@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="limited.it.planet.visicoolertracking.activities.ReconfirmedPage">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_suumery"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Summary Page"-->
+                    <!--android:textSize="25dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_outlet_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OutLet Code:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="59dp"
+                android:layout_marginTop="05dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_outlet_code"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="05dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channel:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="88dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_channel"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/edt_channel_customize"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Edit"
+                    android:theme="@style/Facebook.Button"
+
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_cooler_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooler Status:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:singleLine="false"
+                android:lines="2"
+                android:maxLines="4"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_cooler_status"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_cooler_status_customize"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Edit"
+
+                        android:theme="@style/Facebook.Button"
+
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_cooler_purity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooler Purity:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_cooler_purity"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_cooler_purity_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_cooler_charging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooler Charging %:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_cooler_charging"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_cooler_charging_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_grb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRB:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="115dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_grb"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_grb_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAN:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="114dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_can"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="3"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_can_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+                        android:layout_marginTop="05dp"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_go_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GO PACK:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="82dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_go_pack"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="3"
+                    android:maxLines="4"
+
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_go_pack_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+                        android:layout_marginTop="05dp"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_400ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400ML:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_400ml"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_400ml_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_500ml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500ML:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="99dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_500ml"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="3"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_500ml_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_1_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Liter:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="103dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_1_liter"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_1_liter_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_2_liter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Liter:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="102dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_2_liter"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_2_liter_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_aquafina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquafina:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="83dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_sku_aquafina"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_sku_aquafina_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_active_cooler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Cooler:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_active_cooler"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_active_cooler_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_light_working"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light Working:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_light_working"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_light_working_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_no_of_shelves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Of Shelves:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_no_of_shelves"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_no_of_shelves_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_cleanliness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cleanliness:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_cleanliness"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_cleanliness_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_prime_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prime Position:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="49dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_prime_position"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_prime_position_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Availabilty:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_availabilty"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="3"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_availabilty_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+                        android:layout_marginTop="05dp"
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:background="@drawable/text_input_border"
+                >
+                <TextView
+                    android:id="@+id/edt_remarks"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="false"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:layout_marginTop="03dp"
+
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/edt_remarks_customize"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:textSize="12dp"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:theme="@style/Facebook.Button"
+                        android:text="Edit"
+
+                        android:layout_alignParentRight="true"
+
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_cooler_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cooler Photo:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/text_input_border"
+                >
+                <ImageView
+                    android:id="@+id/img_cooler_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txv_outlet_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outlet Photo:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:textColor="@color/cell_text_color"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:background="@drawable/text_input_border"
+                >
+
+                <ImageView
+                    android:id="@+id/img_outlet_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <Button
+                android:id="@+id/reconfirmed_btn_back"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:textSize="12dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:theme="@style/Facebook.Button"
+                android:text="Back"
+                android:layout_marginLeft="20dp"
+
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_confirmed"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:textSize="12dp"
+
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:theme="@style/Facebook.Button"
+                    android:text="Confirmed"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

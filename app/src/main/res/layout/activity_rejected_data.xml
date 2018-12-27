@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="limited.it.planet.visicoolertracking.activities.RejectedDataActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_view_rejected_data"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                >
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Show All Input Data"-->
+                <!--android:textSize="20dp"-->
+
+                <!--/>-->
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        >
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<EditText-->
+        <!--android:id="@+id/edt_page_no"-->
+        <!--android:layout_width="130dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="0"-->
+        <!--android:layout_marginTop="05dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:singleLine="true"-->
+        <!--/>-->
+
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btn_navigation_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_back"
+                android:visibility="gone"
+                />
+            <!--android:background="@drawable/ic_navigation_back"-->
+            <TextView
+                android:id="@+id/txv_total_duration_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txv_total_duration_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/txv_no_total"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="of Total"-->
+                <!--android:textSize="15dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--/>-->
+            <ImageButton
+                android:id="@+id/btn_navigation_right"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_right"
+                android:layout_marginRight="15dp"
+                />
+            <!--android:background="@drawable/ic_navigation_right"-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <HorizontalScrollView
+            android:id="@+id/tabscrvie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            >
+            <TableLayout
+                android:id="@+id/tbl_layout_rejected_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

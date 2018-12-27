@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    tools:context="limited.it.planet.visicoolertracking.activities.SKUActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sku_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:id="@+id/expandableButtonGRB"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="GRB"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    app:childView="@+id/childView1"
+                    android:layout_marginTop="30dp"
+                    app:color="#297e55"
+
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/childView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="03dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_grb_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_grb_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_grb_mirinda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mirinda"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_grb_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_grb_slice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Slice"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:childView="@+id/childView2"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:text="CAN" />
+                <LinearLayout
+                    android:id="@+id/childView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_can_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_can_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_can_mirinda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mirinda"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_can_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_can_pepsi_diet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi Diet"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_can_pepsi_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi Black"
+                            android:layout_marginLeft="30dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="GO PacK"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView3" >
+
+
+                </com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton>
+
+                <LinearLayout
+                    android:id="@+id/childView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_go_pack_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_go_pack_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_go_pack_mirinda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mirinda"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_go_pack_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_go_pack_pepsi_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi Black"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="400 ML"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView4" />
+
+                <LinearLayout
+                    android:id="@+id/childView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_400ml_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_400ml_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkbox_400ml_7up"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="7UP"-->
+                            <!--android:layout_marginLeft="30dp"-->
+                            <!--/>-->
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkbox_400ml_mdew"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="MDEW"-->
+                            <!--android:layout_marginLeft="30dp"-->
+                            <!--/>-->
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="500 ML"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView5" />
+                <LinearLayout
+                    android:id="@+id/childView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_mirinda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mirinda"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_pepsi_diet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi Diet"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_500ml_7up_light"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up Light"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="1 Liter:"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView7" />
+                <LinearLayout
+                    android:id="@+id/childView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_liter_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_1_liter_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_1_liter_mirinda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mirinda"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+                        <CheckBox
+                            android:id="@+id/checkbox_1_liter_mdew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MDEW"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="2 Liter:"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView8" />
+                <LinearLayout
+                    android:id="@+id/childView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_liter_pepsi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pepsi"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkbox_2_liter_mirinda"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Mirinda"-->
+                            <!--android:layout_marginLeft="30dp"-->
+                            <!--/>-->
+
+                        <CheckBox
+                            android:id="@+id/checkbox_2_liter_7up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="7up"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <!--<CheckBox-->
+                            <!--android:id="@+id/checkbox_2_liter_mdew"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="MDEW"-->
+                            <!--android:layout_marginLeft="30dp"-->
+                            <!--/>-->
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <com.interconn.salmaanahmed.saexpandablebutton.ExpandableButton
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:text="Aquafina:"
+                    app:color="#297e55"
+                    app:icon="@drawable/ic_arrow_drop_down_black_24dp"
+                    app:childView="@+id/childView9" />
+                <LinearLayout
+                    android:id="@+id/childView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="17dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_aquafina_500ml"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="500ml"
+                            android:layout_marginLeft="30dp"
+                            />
+                        <CheckBox
+                            android:id="@+id/checkbox_aquafina_1000ml"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000ml"
+                            android:layout_marginLeft="30dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/checkbox_aquafina_1500ml"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1500ml"
+                            android:layout_marginLeft="30dp"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        >
+                        <Button
+                            android:id="@+id/btn_back"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp"
+                            android:textSize="12dp"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:theme="@style/Facebook.Button"
+                            android:text="Back"
+                            android:layout_marginLeft="0dp"
+
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_sku_update"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                android:text="Update"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:theme="@style/Facebook.Button" />
+                            <Button
+                                android:id="@+id/btn_next"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:textSize="12dp"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:theme="@style/Facebook.Button"
+                                android:text="Next"
+
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

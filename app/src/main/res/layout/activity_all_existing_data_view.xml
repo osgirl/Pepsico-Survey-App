@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="limited.it.planet.visicoolertracking.activities.AllExistingDataViewActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_view_all_existing_data"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                >
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Show All Input Data"-->
+                <!--android:textSize="20dp"-->
+
+                <!--/>-->
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Date From"-->
+                <!--/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/edt_date_first"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_date_first"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="05dp"
+                    app:srcCompat="@drawable/ic_date"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <EditText
+                    android:id="@+id/edt_date_last"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_date_last"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="05dp"
+                    app:srcCompat="@drawable/ic_date"
+                    />
+                <!--android:background="@drawable/ic_date"-->
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:theme="@style/Facebook.Button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Search"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="05dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            >
+            <ImageButton
+                android:id="@+id/btn_navigation_back"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_back"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/txv_total_duration_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txv_total_duration_last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 0"
+                android:textSize="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txv_no_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="of Total"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageButton
+                android:id="@+id/btn_navigation_right"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigation_right"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="159dp"
+        android:layout_marginLeft="5dp"
+        >
+        <HorizontalScrollView
+            android:id="@+id/tabscrvie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            >
+            <TableLayout
+                android:id="@+id/tbl_layout_all_existing_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

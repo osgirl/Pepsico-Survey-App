@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="limited.it.planet.visicoolertracking">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Used to avoid sending an ad request if there is no connectivity. -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/visi_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/visi_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SKUActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="SKU(Pepsico) " />
+        <activity
+            android:name=".activities.ReconfirmedPage"
+            android:label="Summary Page" />
+        <activity
+            android:name=".activities.CoolerStatusActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Cooler Status" />
+        <activity
+            android:name=".activities.BasicInformationActivity"
+            android:label="Basic Information" />
+        <activity
+            android:name=".activities.ImagesAndLast"
+            android:configChanges="orientation|screenSize"
+            android:label="Image and Last"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name=".activities.VISICoolerStatus"
+            android:configChanges="orientation|screenSize"
+            android:label="VISI Cooler Status" />
+
+        <!-- <receiver android:name=".serviOfflineDataAutoSynciver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- &lt;!&ndash; <action android:name="android.net.wifi.WIFI_STATE_CHANGED" /> &ndash;&gt; -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <service android:name=".services.SendOfflineDataToServer" />
+
+        <activity android:name=".activities.FailedServeyDataActivity" />
+        <activity
+            android:name=".activities.ViewInputDataActivity"
+            android:label="Show All Input Data" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.AllExistingDataViewActivity"
+            android:label="ALL Existing Data Show" />
+
+        <receiver android:name=".services.OfflineDataAutoSync">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.OfflineDataActivity"
+            android:label="Offline Data" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.ShowNotificationMessage"
+            android:label="Show Notification Message" />
+        <activity android:name=".activities.RejectedDataActivity" android:label="Rejected Data Show"></activity>
+
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+    </application>
+
+</manifest>

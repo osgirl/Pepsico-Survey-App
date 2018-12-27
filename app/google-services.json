@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "981283305341",
+    "firebase_url": "https://visicoolertracking.firebaseio.com",
+    "project_id": "visicoolertracking",
+    "storage_bucket": "visicoolertracking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981283305341:android:c2ef61f411b7f519",
+        "android_client_info": {
+          "package_name": "limited.it.planet.visicoolertracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981283305341-gev2fn271i69fsaf7urlij97b4mb6sp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEHZU9qaZMoZq8vnocVwKjb69oyK-7Z08"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_input_data"
+            android:title="Input Data" />
+        <item
+            android:id="@+id/nav_all_existing_data"
+            android:title="All Existing Data" />
+        <item
+            android:id="@+id/nav_offline_data"
+            android:title="Offline Data" />
+        <!--<item-->
+            <!--android:id="@+id/nav_update_data"-->
+
+            <!--android:title="Update Data" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:orderInCategory="100"
+            android:title="Logout"
+              />
+        <item
+            android:id="@+id/nav_export_data"
+
+            android:title="Export Data" />
+        <item
+            android:id="@+id/nav_rejected_data"
+
+            android:title="Rejected Data" />
+    </group>
+
+</menu>
